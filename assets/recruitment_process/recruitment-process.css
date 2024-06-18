@@ -1,0 +1,249 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+.process-card {
+    display: -moz-box;
+    display: flex;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    max-width: 461px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer
+}
+
+.process-card .process-card-number {
+    background-color: #0275D8;
+    border-radius: 50%;
+    height: 37px;
+    min-width: 37px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: -.02em;
+    display: -moz-box;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px
+}
+
+@media only screen and (max-width:480px) {
+    .process-card .process-card-number {
+        height: 28px;
+        min-width: 28px;
+        font-size: 1.125rem;
+        line-height: 2rem
+    }
+}
+
+.process-card .process-card-details .process-card-heading {
+    color: #0275D8;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    letter-spacing: -.02em;
+    margin-top: 2px;
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+}
+
+@media only screen and (max-width:480px) {
+    .process-card .process-card-details .process-card-heading {
+        margin-top: -3px;
+        font-size: 1.125rem;
+        line-height: 2rem
+    }
+}
+
+.process-card .process-card-details .process-card-text {
+    color: #566474;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    letter-spacing: -.02em;
+    display: none
+}
+
+@media only screen and (max-width:480px) {
+    .process-card .process-card-details .process-card-text {
+        font-size: .875rem;
+        line-height: 1.4rem
+    }
+}
+
+.process-hover {
+    -webkit-box-shadow: 0 6px 20px rgba(30, 56, 193, .1);
+    box-shadow: 0 6px 20px rgba(30, 56, 193, .1);
+    border-radius: 10px
+}
+
+@media only screen and (max-width:480px) {
+    .process-hover {
+        border: 1.5px solid #c8d6e5
+    }
+}
+
+.process-hover .process-card-text {
+    display: block !important
+}
+
+.process-hover .process-card-number {
+    background-color: #12cf74
+}
+
+.process-hover .process-card-heading {
+    color: #12cf74 !important
+}
+
+.process-section-div {
+    display: -moz-box;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    -moz-box-align: center;
+    align-items: center;
+    z-index: 1;
+    font-family: Raleway, sans-serif;
+}
+
+.process-section-div a {
+    color: black;
+}
+
+@media only screen and (max-width:960px) {
+    .process-section-div {
+        -moz-box-orient: vertical;
+        -moz-box-direction: normal;
+        flex-direction: column
+    }
+}
+
+.process-section-div .process-heading {
+    display: -moz-box;
+    display: flex;
+    -moz-box-align: center;
+    align-items: center;
+    color: #1e272e;
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 4rem;
+    letter-spacing: -.02em;
+    text-align: left;
+}
+
+@media only screen and (max-width:960px) {
+    .process-section-div .process-heading {
+        width: 85%;
+        margin-bottom: 15px;
+        margin-top: 15px
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .process-section-div .process-heading {
+        max-width: 320px;
+        font-size: 1.5rem;
+        line-height: 1.6rem
+    }
+}
+
+.process-section-div .process-heading {
+    color: #127acf;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: -.02em;
+    text-align: left;
+    margin-left: 44px;
+    margin-bottom: -10px;
+    cursor: pointer;
+    position: relative
+}
+
+@media only screen and (max-width:480px) {
+    .process-section-div .process-heading {
+        display: none
+    }
+}
+
+@media only screen and (min-width:961px) {
+    #registerButton {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:960px) {
+    #process-image,
+    #process-contact-us-form {
+        visibility: hidden;
+        display: none !important;
+    }
+    #registerButton {
+        display: block;
+    }
+}
+
+.process-section-div .process-heading:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #12cf74;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: right;
+    transform-origin: right;
+    -webkit-transition: -webkit-transform .25s ease-in;
+    transition: -webkit-transform .25s ease-in;
+    transition: transform .25s ease-in;
+    transition: transform .25s ease-in, -webkit-transform .25s ease-in
+}
+
+.process-section-div .process-heading:hover:after {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+    transform-origin: left
+}
+
+.process-section-div .process-card-container {
+    width: 50%;
+    display: -moz-box;
+    display: flex;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    -moz-box-align: start;
+    align-items: flex-start
+}
+
+@media only screen and (max-width:960px) {
+    .process-section-div .process-card-container {
+        width: 100%;
+        -moz-box-pack: center;
+        justify-content: center;
+        -moz-box-align: center;
+        align-items: center
+    }
+}
+
+.process-section-div .giffy {
+    width: 50%;
+    display: -moz-box;
+    display: flex;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    -moz-box-align: center;
+    align-items: center
+}
+
+.process-section-div .giffy img {
+    width: 95%
+}
